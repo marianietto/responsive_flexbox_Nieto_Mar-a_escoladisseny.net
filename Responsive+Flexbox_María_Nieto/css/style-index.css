@@ -1,0 +1,242 @@
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+
+
+    }
+
+    header h1 {
+        font-size: 3rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-bottom: 1.5rem;
+    }
+
+
+
+    #enlaces nav {
+        padding-right: 0.75rem;
+        display: flex;
+        border-radius: 2rem;
+        gap: 20px;
+        padding-bottom: 2rem;
+
+
+    }
+
+    .barra-superior {
+        display: flex;
+
+    }
+
+    .caja-nav {
+        line-height: 1.1;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(66, 65, 65);
+        font-size: 1em;
+        align-items: flex-end;
+
+    }
+
+    .caja-nav a {
+        opacity: 0.7;
+        /* Baja la opacidad */
+        color: black
+    }
+
+
+    a:hover {
+        color: #ffffff;
+        font-size: 1.2em;
+        /* Aumenta el tamaño de la fuente */
+        cursor: cell;
+        /* Cambia el cursor  */
+        background-color: rgb(184, 172, 195);
+
+    }
+
+    li {
+        list-style-type: none;
+
+    }
+
+
+
+    .imagen1 {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+
+    h2 {
+        margin-left: 0.5rem;
+    }
+
+    .bloque1 {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(204, 200, 200);
+        text-align: left;
+        overflow: auto;
+        flex-direction: column;
+
+    }
+
+
+    .bloque1 h2,
+    .bloque1 p {
+        text-align: left;
+        font-size: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .bloque1 p {
+        text-align: justify;
+        font-size: 0.9rem;
+        padding: 0 1rem 0.5rem 1rem
+    }
+
+
+
+    .bloque2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        flex-direction: column;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .article1 {
+        background-color: rgb(240, 237, 237);
+        width: 100%;
+
+    }
+
+    .article2 {
+        background-color: rgb(240, 237, 237);
+        width: 100%;
+
+    }
+
+    .bloque2 h2 {
+        text-align: left;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .bloque2 p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .bloque2 p:hover {
+        color: rgb(60, 60, 162);
+
+    }
+
+    .bloque2 img {
+        width: 100px;
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+
+
+    footer {
+        background-color: rgb(204, 200, 200);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
+
+
+
+    /* Ancho del 80% para dispositivos con pantallas más grandes */
+    @media (min-width: 850px) {
+        .caja-nav {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+
+        .article1 {
+            width: 50%;
+            padding: 1rem;
+
+        }
+
+        .article2 {
+
+            width: 50%;
+            padding: 1rem;
+        }
+
+        .container {
+            flex-direction: row;
+            width: 80%;
+
+        }
+
+        .bloque2 {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .barra-superior {
+            justify-content: space-between;
+
+        }
+
+    }
+
+    /* Ancho del 95% para dispositivos con pantallas más pequeñas */
+    @media (max-width: 850px) {
+
+        .container {
+            width: 95%;
+
+        }
+
+
+        .caja-nav {
+            display: block;
+            flex-direction: column;
+
+        }
+
+        .cambio {
+            content: url('../img/imgcambio.jpg');
+            max-width: 100%;
+        }
+
+        .bloque2 p {
+
+            text-align: justify;
+            font-size: 0.9rem;
+            display: block;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing: border-box;
+
+        }
+
+
+
+
+
+    }
